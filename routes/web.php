@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('notes', function()
+{
+  return view('notes');
+});
+
+Route::get('list', function()
+{
+  return view('note-list');
 });
